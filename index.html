@@ -16,6 +16,9 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 .catalog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin-top:12px}
 .catalog-grid a{display:block;background:#f5f5f5;border:1px solid #ddd;border-radius:8px;padding:9px 11px;font-weight:bold}
 .catalog-grid a:hover{background:#eee;text-decoration:none}
+.subheading{font-size:18px;margin:22px 0 8px;padding:7px 10px;background:#f5f5f5;border-left:4px solid #999}
+.empty-sub{padding:8px 12px;margin:6px 0 16px;color:#777;font-style:italic;background:#fafafa;border:1px dashed #ccc;border-radius:7px}
+
 .subheading{font-size:20px;margin:24px 0 10px}
 .local-periodika{margin:18px 0 24px;padding:12px 16px;border-left:4px solid #bbb;background:#fafafa;border-radius:8px}
 .local-periodika .card{margin:10px 0}
@@ -32,8 +35,10 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 
 <input class="search" id="q" placeholder="Pretraži: Kuršumlija, Prokuplje, Dubovo, Bojnik, Drainac, karta..." oninput="filter()">
 
+
 <div class="catalog intro">
-<h2 style="margin-top:0;border-bottom:0">📚 KATALOG BIBLIOTEKE</h2>
+<h2 style="margin-top:0;border-bottom:0">📚 KATALOG I REGISTRI</h2>
+<p>Biblioteka je organizovana po geografskim celinama, a unutar njih po istorijskim periodima i temama.</p>
 <div class="catalog-grid">
 <a href="#katalog">00 — KATALOG I REGISTRI</a>
 <a href="#srbija">01 — SRBIJA</a>
@@ -43,32 +48,13 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <a href="#jablanica">05 — JABLANICA</a>
 <a href="#krusevac">06 — KRUŠEVAC I RASINA</a>
 <a href="#morava">07 — MORAVA</a>
-<a href="#karte">08 — KARTE I MAPE</a>
-<a href="#fotografije">09 — FOTOGRAFIJE</a>
-<a href="#video">10 — VIDEO</a>
-<a href="#dokumenta">11 — DOKUMENTA I ARHIVSKA GRAĐA</a>
-<a href="#licnosti">13 — LIČNOSTI I RODOSLOVI</a>
-<a href="#ostalo">99 — OSTALO / NERAZVRSTANO</a>
-</div>
-</div>
+<a href="#ostalo">99 — OSTALO / JOŠ NIJE RAZVRSTANO</a>
+</div></div>
+<h2 id="katalog">00 - KATALOG I REGISTRI</h2>
+<div class="intro"><p>Katalog knjiga, izvora i digitalizovane građe, uz registre ličnosti, mesta, događaja, jedinica, objekata, porodica/rodova i izvora.</p></div>
 
-
-
-<h2 id="katalog">00. 📚 Katalog i registri</h2>
-<div class="intro">
-<p><b>Pretraga biblioteke</b> obuhvata naslove, opise i ključne reči svih zapisa na ovoj stranici.</p>
-<p class="small">Registri su organizovani po ličnostima, mestima, događajima, jedinicama, objektima, porodicama/rodovima i izvorima.</p>
-</div>
-
-
-
-
-<h2 id="srbija">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-
-</div>01. 🇷🇸 Srbija</h2>
-
+<h2 id="srbija">01 - SRBIJA</h2>
+<h3 class="subheading">01.1 - Opšta istorija Srbije</h3>
 <div class="card" data-text="Svetozar Marković Srbija na Istoku 1872 ratovi 1876 1877 Toplica">
 <div class="status green">🟢 FULL VIEW</div>
 <b>Svetozar Marković — Srbija na Istoku (1872)</b>
@@ -87,27 +73,11 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Za politički i diplomatski kontekst Srbije uoči ratova 1876–1878.</p>
 <a href="https://books.google.com/books?id=Cmne7-Gq4FcC" target="_blank">📖 OTVORI KNJIGU</a>
 </div>
-
-<div class="card" data-text="Dragoljub Dinić Mića Toplički narodnooslobodilački partizanski odred 1941 1942 Prokuplje Žitorađa Blace Lebane Medveđa">
-<div class="status green">🟢 CELO DELO — ČITANJE ONLINE</div>
-<b>Dragoljub Dinić Mića — Toplički narodnooslobodilački partizanski odred</b>
-<p>Kompletna digitalna knjiga. Sadrži posebna poglavlja o napadu na Prokuplje, borbama na Pasjači, oslobođenju Lebana i Medveđe i <b>napadu na Blace</b>, kao i priloge sa spiskovima boraca.</p>
-<a href="https://znaci.org/00001/280.htm" target="_blank">📖 OTVORI CELU KNJIGU</a>
-</div>
-<div class="card" data-text="Suđenje članovima političkog i vojnog rukovodstva organizacije Draže Mihailovića stenografske beleške 1945">
-<div class="status green">🟢 CELO DELO — PDF</div>
-<b>Suđenje члановима политичког и војног руководства организације Драже Михаиловића — stenografske beleške (1945)</b>
-<p>Kompletan digitalizovani primerak izdanja Prosvete iz 1945. godine. Sistory ga navodi kao javno dobro (CC Public Domain).</p>
-<a href="https://www.sistory.si/publication/41031" target="_blank">📖 OTVORI / PREUZMI PDF</a>
-</div>
-
-<div class="card" data-text="Uroš Šešum Pripajanje delova Niške eparhije Srpskoj crkvi 1832 1834 Toplica crkve administracija">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Uroš Šešum — Pripajanje delova Niške eparhije Srpskoj crkvi (1832–1834)</b>
-<p>Rad o crkvenoj strukturi i administrativnom uključivanju oslobođenih krajeva 1832–1834, koristan kao širi prethodni kontekst za kasniju istoriju Toplice.</p>
-<a href="https://www.academia.edu/128628573/%D0%9F%D1%80%D0%B8%D0%BF%D0%B0%D1%98%D0%B0%D1%9A%D0%B5_%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0_%D0%9D%D0%B8%D1%88%D0%BA%D0%B5_%D0%B5%D0%BF%D0%B0%D1%80%D1%85%D0%B8%D1%98%D0%B5_%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%BE%D1%98_%D1%86%D1%80%D0%BA%D0%B2%D0%B8_1832_1834_" target="_blank">📄 OTVORI / PREUZMI PDF</a>
-</div>
-
+<h3 class="subheading">01.2 - Praistorija</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">01.3 - Rimsko doba</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">01.4 - Srednji vek</h3>
 <div class="card" data-text="Istorija srpskog naroda 1892 Nemanja Lazar Kruševac Morava Toplica">
 <div class="status green">🟢 FULL VIEW</div>
 <b>Istorija srpskog naroda — izdanje iz 1892.</b>
@@ -120,39 +90,31 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Drugo ispravljeno i dopunjeno izdanje, u dve knjige. Dostupan je digitalizovani primerak za čitanje online.</p>
 <a href="https://anyflip.com/avcep/nlrm/basic" target="_blank">📖 OTVORI DIGITALIZOVANI PRIMERAK</a>
 </div>
-
-<div class="card" data-text="Herder Bergmännische Reise Serbien 1835 1846 Kopaonik rudarstvo rude planine">
-<div class="status green">🟢 FULL VIEW</div>
-<b>S. A. W. von Herder — Bergmännische Reise in Serbien (putovanje 1835; izdanje 1846)</b>
-<p>Geološko-rudarski putopis, naročito zanimljiv za Kopaonik, rude, planine i puteve Srbije.</p>
-<a href="https://books.google.com/books?id=NtdhAAAAcAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+<div class="card" data-text="Aleksa Ivić Rodoslovne tablice srpskih dinastija vlastele 1928">
+<div class="status green">🟢 CELO DELO — ONLINE</div>
+<b>Aleksa Ivić — Rodoslovne tablice srpskih dinastija i vlastele (1928)</b>
+<p>Digitalno izdanje sa tekstom i rodoslovnim tablicama srpskih dinastija i vlastele.</p>
+<a href="https://sr.wikisource.org/sr-el/Rodoslovne_tablice_%28A._Ivi%C4%87%29" target="_blank">📖 OTVORI DIGITALNO IZDANJE</a>
 </div>
-
-<div class="card" data-text="Jovan Cvijić Balkansko poluostrvo Južnoslovenske zemlje antropogeografija">
-<div class="status green">🟢 CELO DELO — PDF</div>
-<b>Jovan Cvijić — Balkansko poluostrvo i Južnoslovenske zemlje</b>
-<p>Osnovi antropogeografije i etnografije Balkana; dostupna su dva dela u digitalnom PDF izdanju.</p>
-<a href="http://www.promacedonia.org/serb/cvijc/cvijic_balkansko_poluostrvo_1.pdf" target="_blank">📖 DEO I</a> ·
-<a href="http://www.promacedonia.org/serb/cvijc/cvijic_balkansko_poluostrvo_2.pdf" target="_blank">📖 DEO II</a>
+<div class="card" data-text="Sveta loza Stefana Nemanje Željko Fajfrić Nemanjići">
+<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
+<b>Željko Fajfrić — Sveta loza Stefana Nemanje</b>
+<p>Integralno elektronsko izdanje knjige o Nemanjićima na Projektu Rastko.</p>
+<a href="https://www.rastko.rs/istorija/loza_nemanjica/index.html" target="_blank">📖 OTVORI CELO DELO</a>
 </div>
-<div class="card" data-text="Jovan Cvijić Naselja srpskih zemalja knjiga VI Srpski etnografski zbornik 1909 Hercegovina">
-<div class="status green">🟢 DIGITALNA ZBIRKA</div>
-<b>Jovan Cvijić — Naselja srpskih zemalja, knjiga VI (1909)</b>
-<p>Šesti tom Srpskog etnografskog zbornika; digitalna zbirka na portalu Poreklo obuhvata knjigu VI.</p>
-<a href="https://www.poreklo.rs/2013/07/17/kompletna-digitalna-zbirka-47-knjiga-naselja-i-poreklo-stanovnistva/comment-page-2/?script=lat" target="_blank">📚 OTVORI DIGITALNU ZBIRKU</a>
+<div class="card" data-text="Sveta loza Brankovića Željko Fajfrić Brankovići">
+<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
+<b>Željko Fajfrić — Sveta loza Brankovića</b>
+<p>Integralno internet izdanje o poreklu, razvoju i članovima loze Brankovića.</p>
+<a href="https://rastko.rs/kosovo/istorija/zfajfric-brankovici.html" target="_blank">📖 OTVORI CELO DELO</a>
 </div>
-
-<div class="card" data-text="Vladan Jovanovic Burda karta opštine Kuršumlija raspored mesnih kancelarija mesne kancelarije Kuršumlija mapa">
-<div class="status blue">🔵 DIGITALNA KARTA — PROTON DRIVE</div>
-<b>🗺️ Karta opštine Kuršumlija — raspored mesnih kancelarija</b>
-<p><b>Autor: Vladan Jovanovic – Burda</b></p>
-<p>Autorska karta opštine Kuršumlija sa rasporedom mesnih kancelarija. Karta je izrađena lično i postavljena u digitalnu biblioteku uz dozvolu autora.</p>
-<p class="small"><b>Autor:</b> Vladan Jovanovic – Burda. <b>Napomena o izvoru:</b> autorska karta, nije preuzeta iz druge publikacije.</p>
-<a href="https://drive.proton.me/urls/JBTG9XHSBM#l1zT25W0EX9q" target="_blank">🗺️ OTVORI KARTU</a> ·
-<a href="https://drive.proton.me/urls/JBTG9XHSBM#l1zT25W0EX9q" target="_blank">📥 OTVORI / PREUZMI</a>
+<div class="card" data-text="Sveta loza kneza Lazara Željko Fajfrić Lazarevići">
+<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
+<b>Željko Fajfrić — Sveta loza kneza Lazara</b>
+<p>Internet izdanje posvećeno Lazarevićima i srednjovekovnoj Srbiji.</p>
+<a href="https://www.rastko.rs/kosovo/istorija/zfajfric-lazarevici_c.html" target="_blank">📖 OTVORI CELO DELO</a>
 </div>
-
-
+<h3 class="subheading">01.5 - Srpsko-turski period</h3>
 <div class="card" data-text="Vladan Đorđević Srpsko-turski rat uspomene beleške 1876 1877 1878 Kuršumlija Toplica Niš 1907 knjiga 1">
 <div class="status green">🟢 FULL VIEW / BESPLATNO</div>
 <b>Vladan Đorđević — Srpsko-turski rat: uspomene i beleške iz 1876, 1877 i 1878 godine, knjiga I (1907)</b>
@@ -174,30 +136,77 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <a href="https://drive.proton.me/urls/MKGN3MS0AC#09pLN8Lsz8tP" target="_blank">📖 ČITAJ ONLINE</a> ·
 <a href="https://drive.proton.me/urls/MKGN3MS0AC#09pLN8Lsz8tP" target="_blank">📥 OTVORI / PREUZMI PDF</a>
 </div>
-
-
-
-
-
-
-
-<h2 id="toplica">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-<div class="card" data-text="Dragana Amedoski Vakufi kadiluci Leskovac Prokuplje Kuršumlija Pirot 18 19 vek Osmanlije vakufi">
+<h3 class="subheading">01.6 - Oslobođenje 1804-1878</h3>
+<div class="card" data-text="Uroš Šešum Pripajanje delova Niške eparhije Srpskoj crkvi 1832 1834 Toplica crkve administracija">
 <div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Dragana Amedoski — Vakufi u kadilucima Leskovac, Prokuplje, Kuršumlija i Pirot u 18. i 19. veku</b>
-<p>Rad zasnovan na osmanskoj građi, uključujući popis vakufa iz 1839. godine. Posebno važan za istoriju Kuršumlije, Prokuplja i šireg prostora Toplice pod Osmanlijama.</p>
-<a href="https://iib-ac.academia.edu/DraganaAmedoski" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+<b>Uroš Šešum — Pripajanje delova Niške eparhije Srpskoj crkvi (1832–1834)</b>
+<p>Rad o crkvenoj strukturi i administrativnom uključivanju oslobođenih krajeva 1832–1834, koristan kao širi prethodni kontekst za kasniju istoriju Toplice.</p>
+<a href="https://www.academia.edu/128628573/%D0%9F%D1%80%D0%B8%D0%BF%D0%B0%D1%98%D0%B0%D1%9A%D0%B5_%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0_%D0%9D%D0%B8%D1%88%D0%BA%D0%B5_%D0%B5%D0%BF%D0%B0%D1%80%D1%85%D0%B8%D1%98%D0%B5_%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%BE%D1%98_%D1%86%D1%80%D0%BA%D0%B2%D0%B8_1832_1834_" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-<div class="card" data-text="Danijela Vukoičić Toplica stanovništvo naselja gustina Kuršumlija Prokuplje Blace Žitorađa 20 vek">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Danijela Vukoičić — Changes in Population, Households, and Population Density in Toplica District in the Second Half of the XX and Beginning of XXI Century</b>
-<p>Demografski rad o četiri opštine Topličkog okruga: Prokuplje, Kuršumlija, Blace i Žitorađa, sa podacima o naseljima, stanovništvu i promenama gustine.</p>
-<a href="https://independent.academia.edu/DanijelaVukoi%C4%8Di%C4%87" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+<h3 class="subheading">01.7 - Kraljevina Srbija</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">01.8 - Jugoslavija</h3>
+<div class="card" data-text="Dragoljub Dinić Mića Toplički narodnooslobodilački partizanski odred 1941 1942 Prokuplje Žitorađa Blace Lebane Medveđa">
+<div class="status green">🟢 CELO DELO — ČITANJE ONLINE</div>
+<b>Dragoljub Dinić Mića — Toplički narodnooslobodilački partizanski odred</b>
+<p>Kompletna digitalna knjiga. Sadrži posebna poglavlja o napadu na Prokuplje, borbama na Pasjači, oslobođenju Lebana i Medveđe i <b>napadu na Blace</b>, kao i priloge sa spiskovima boraca.</p>
+<a href="https://znaci.org/00001/280.htm" target="_blank">📖 OTVORI CELU KNJIGU</a>
 </div>
-</div>02. 🗺️ Toplica</h2>
+<div class="card" data-text="Suđenje članovima političkog i vojnog rukovodstva organizacije Draže Mihailovića stenografske beleške 1945">
+<div class="status green">🟢 CELO DELO — PDF</div>
+<b>Suđenje члановима политичког и војног руководства организације Драже Михаиловића — stenografske beleške (1945)</b>
+<p>Kompletan digitalizovani primerak izdanja Prosvete iz 1945. godine. Sistory ga navodi kao javno dobro (CC Public Domain).</p>
+<a href="https://www.sistory.si/publication/41031" target="_blank">📖 OTVORI / PREUZMI PDF</a>
+</div>
+<h3 class="subheading">01.9 - Ostalo</h3>
+<div class="card" data-text="Herder Bergmännische Reise Serbien 1835 1846 Kopaonik rudarstvo rude planine">
+<div class="status green">🟢 FULL VIEW</div>
+<b>S. A. W. von Herder — Bergmännische Reise in Serbien (putovanje 1835; izdanje 1846)</b>
+<p>Geološko-rudarski putopis, naročito zanimljiv za Kopaonik, rude, planine i puteve Srbije.</p>
+<a href="https://books.google.com/books?id=NtdhAAAAcAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+</div>
+<div class="card" data-text="Jovan Cvijić Balkansko poluostrvo Južnoslovenske zemlje antropogeografija">
+<div class="status green">🟢 CELO DELO — PDF</div>
+<b>Jovan Cvijić — Balkansko poluostrvo i Južnoslovenske zemlje</b>
+<p>Osnovi antropogeografije i etnografije Balkana; dostupna su dva dela u digitalnom PDF izdanju.</p>
+<a href="http://www.promacedonia.org/serb/cvijc/cvijic_balkansko_poluostrvo_1.pdf" target="_blank">📖 DEO I</a> ·
+<a href="http://www.promacedonia.org/serb/cvijc/cvijic_balkansko_poluostrvo_2.pdf" target="_blank">📖 DEO II</a>
+</div>
+<div class="card" data-text="Jovan Cvijić Naselja srpskih zemalja knjiga VI Srpski etnografski zbornik 1909 Hercegovina">
+<div class="status green">🟢 DIGITALNA ZBIRKA</div>
+<b>Jovan Cvijić — Naselja srpskih zemalja, knjiga VI (1909)</b>
+<p>Šesti tom Srpskog etnografskog zbornika; digitalna zbirka na portalu Poreklo obuhvata knjigu VI.</p>
+<a href="https://www.poreklo.rs/2013/07/17/kompletna-digitalna-zbirka-47-knjiga-naselja-i-poreklo-stanovnistva/comment-page-2/?script=lat" target="_blank">📚 OTVORI DIGITALNU ZBIRKU</a>
+</div>
+<div class="card" data-text="Tabula Peutingeriana Peutingerova tabla rimski putevi Balkana Mezija Dardanija Toplica">
+<div class="status blue">🔵 DIGITALNA KARTA — INTERAKTIVNA</div>
+<b>Tabula Peutingeriana — rimska putna mreža</b>
+<p>Interaktivni digitalni prikaz Peutingerove table, sa segmentima rimske putne mreže. Koristan za praćenje antičkih komunikacija na prostoru Balkana i šireg područja Srbije.</p>
+<a href="https://www.tabula-peutingeriana.de/tabula.php?segm=6#a3" target="_blank">🗺️ OTVORI TABULU — SEGMENT 6</a>
+</div>
+<div class="card" data-text="Prokuplje Hisar stari plan 1689 austrijski plan">
+<div class="status blue">🔵 DIGITALNI PLAN</div>
+<b>Stari austrijski plan Prokuplja / Hisara (1689)</b>
+<p>Istorijski plan utvrđenja Prokuplja/Hisara, koristan za poređenje izgleda grada i utvrđenja kroz vreme.</p>
+<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_stari_plan.jpg" target="_blank">🗺️ OTVORI PLAN</a>
+</div>
+<div class="card" data-text="Fra Mauro mapa 1459 1460 srednjovekovna kartografija Balkan Srbija">
+<div class="status blue">🔵 DIGITALNA KARTA — VISOKA REZOLUCIJA</div>
+<b>Fra Mauro — Mappa Mundi (oko 1459–1460)</b>
+<p>Srednjovekovna karta sveta, korisna za istorijsku kartografiju i proučavanje predstava Balkana i Srbije. Wikimedia Commons ima originalni digitalni fajl u rezoluciji 5.000 × 5.000 piksela.</p>
+<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/FraMauroDetailedMap.jpg/960px-FraMauroDetailedMap.jpg" alt="Fra Mauro mapa" style="width:100%;max-width:700px;border:1px solid #ddd;border-radius:8px;display:block;margin:12px 0">
+<a href="https://commons.wikimedia.org/wiki/File:FraMauroDetailedMap.jpg" target="_blank">🗺️ OTVORI KARTU / ORIGINAL 5000×5000</a>
+</div>
+<div class="card" data-text="Historical Archive Toplice Prokuplje mapa istorijski arhiv">
+<div class="status blue">🔵 DIGITALNA MAPA</div>
+<b>Istorijski arhiv „Toplice“ — mapa</b>
+<p>Istorijska mapa povezana sa građom Istorijskog arhiva „Toplice“, dostupna preko Wikimedia Commons.</p>
+<a href="https://commons.wikimedia.org/wiki/File%3AHistorical_Archive_%22Toplice%22_of_Prokuplje_Map.png" target="_blank">🗺️ OTVORI MAPU</a>
+</div>
 
+
+<h2 id="toplica">02 - TOPLICA</h2>
+<h3 class="subheading">02.1 - Opšta istorija Toplice</h3>
 <div class="card" data-text="Milan Đ. Milićević Kraljevina Srbija Novi krajevi 1884 Toplički okrug Kuršumlija Prokuplje Kosanica Jablanica Pusta Reka Prepolac Samokovo Mapa">
 <div class="status blue">🔵 DIGITALNI PDF — PROTON DRIVE</div>
 <b>Milan Đ. Milićević — <i>Kraljevina Srbija: Novi krajevi</i> (1884) — Toplički okrug, izdvojeno</b>
@@ -214,33 +223,44 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Veliki izvor od 1.253 strane, objavljen neposredno pre oslobođenja Toplice. Koristan za geografiju, istoriju, naselja i širi kontekst Srbije.</p>
 <a href="https://books.google.com/books?id=RS8KAQAAIAAJ" target="_blank">📖 OTVORI KNJIGU</a>
 </div>
-<div class="card" data-text="Statistika Kraljevine Srbije 1907 Toplički okrug Kruševački okrug srez sela stanovništvo">
-<div class="status green">🟢 FULL VIEW / PREUZIMANJE</div>
-<b>Statistika Kraljevine Srbije — Volume 26 (1907)</b>
-<p>Posebno korisno za okruge, srezove, sela i statistiku stanovništva. U sadržaju su relevantni podaci za Toplički i Kruševački kraj.</p>
-<a href="https://books.google.com/books?id=JzAtAQAAMAAJ" target="_blank">📖 OTVORI / PROVERI PREUZIMANJE</a>
+<div class="card" data-text="Mita Rakić Iz nove Srbije Pusta Reka Bojnik Brijanje Kacabać Prokuplje Drenovac Petrova gora">
+<div class="status green">🟢 ČITANJE ONLINE</div>
+<b>Mita Rakić — Iz nove Srbije (1880–1881)</b>
+<p>Putopisni izvor neposredno posle oslobođenja. Posebno važan za pravac Prokuplje → Drenovac → Brijanje → Gornje/Donje Brijanje → Kacabać → Bojnik i Petrovu goru.</p>
+<a href="https://anyflip.com/cawny/rnjf/" target="_blank">📖 OTVORI KNJIGU ONLINE</a>
 </div>
-<h3 style="margin-top:26px">📍 Blace i neposredna okolina</h3>
+<h3 class="subheading">02.2 - Praistorija</h3>
 <div class="card" data-text="Blace Pločnik arheologija Julka Kuzmanović Vinča Bače Pločnik">
 <div class="status blue">🔵 DIREKTAN PDF</div>
 <b>Julka Kuzmanović-Cvetković — arheološka građa za Pločnik kod Baca</b>
 <p>Arheološki izveštaj o praistorijskom naselju Pločnik, u blizini Baca i Pločnika, sa podacima o istraživanjima i nalazima Vinčanske kulture.</p>
 <a href="https://rastko.rs/files/books/5c47b80e7eadd.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
 </div>
-<div class="card" data-text="Blace Toplica demografija stanovništvo migracije 1948 2011">
-<div class="status green">🟢 DIREKTAN PDF</div>
-<b>Maja Novović i Marija Mihajlović — Demographic Changes in the County of Toplica</b>
-<p>Širi demografski pregled Toplice sa posebnim tabelama za opštinu Blace: stanovništvo, gustina, migracije, prirodni priraštaj, starosna i ekonomska struktura.</p>
-<a href="https://www.pmf.ni.ac.rs/download/casopisi/sjg/3-2017.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
+<h3 class="subheading">02.3 - Rimsko doba</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">02.4 - Srednji vek</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">02.5 - Srpsko-turski period</h3>
+<div class="card" data-text="Dragana Amedoski Vakufi kadiluci Leskovac Prokuplje Kuršumlija Pirot 18 19 vek Osmanlije vakufi">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Dragana Amedoski — Vakufi u kadilucima Leskovac, Prokuplje, Kuršumlija i Pirot u 18. i 19. veku</b>
+<p>Rad zasnovan na osmanskoj građi, uključujući popis vakufa iz 1839. godine. Posebno važan za istoriju Kuršumlije, Prokuplja i šireg prostora Toplice pod Osmanlijama.</p>
+<a href="https://iib-ac.academia.edu/DraganaAmedoski" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-
-<div class="card" data-text="Tihomir Đorđević Iz Srbije kneza Miloša 1815 1839 Srbija naselja društvo običaji">
-<div class="status green">🟢 FULL VIEW</div>
-<b>Tihomir R. Đorđević — Iz Srbije kneza Miloša: kulturne prilike od 1815. do 1839. godine (1922)</b>
-<p>Širi istorijski okvir za Srbiju prve polovine XIX veka: uprava, naselja, društvo, običaji i život.</p>
-<a href="https://books.google.com/books?id=D0gLAAAAIAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+<h3 class="subheading">02.6 - Oslobođenje 1877-1878</h3>
+<div class="card" data-text="Milan Savić Naselja stanovništvo Toplice oslobođenje 1878 Kuršumlija Prokuplje Academia">
+<div class="status green">🟢 BESPLATAN PDF / PROFIL AUTORA</div>
+<b>Milan Savić — Naselja i stanovništvo Toplice uoči oslobođenja 1878. godine</b>
+<p>Rad direktno obrađuje naselja i stanovništvo Toplice pred oslobođenje.</p>
+<a href="https://f-bg.academia.edu/MilanSavic" target="_blank">📄 OTVORI RAD / PREUZIMANJE</a>
 </div>
-
+<h3 class="subheading">02.7 - Kraljevina Srbija</h3>
+<div class="card" data-text="Statistika Kraljevine Srbije 1907 Toplički okrug Kruševački okrug srez sela stanovništvo">
+<div class="status green">🟢 FULL VIEW / PREUZIMANJE</div>
+<b>Statistika Kraljevine Srbije — Volume 26 (1907)</b>
+<p>Posebno korisno za okruge, srezove, sela i statistiku stanovništva. U sadržaju su relevantni podaci za Toplički i Kruševački kraj.</p>
+<a href="https://books.google.com/books?id=JzAtAQAAMAAJ" target="_blank">📖 OTVORI / PROVERI PREUZIMANJE</a>
+</div>
 <div class="card" data-text="Uroš Šešum Sveštenstvo Toplice Topličkog protoprezviterata 19 vek Kuršumlija Prokuplje Pusta Reka Jablanica crkve sveštenstvo">
 <div class="status green">🟢 BESPLATAN PDF — ORIGINALNI JAVNI IZVOR</div>
 <b>Uroš Šešum — <i>Sveštenstvo Toplice u XIX veku</i></b>
@@ -263,44 +283,33 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Posebno koristan rad za naš odeljak Pusta Reka — Jablanica: prati uključivanje Puste Reke, Gornje i Donje Jablanice u strukturu Srpske pravoslavne crkve i razvoj parohija i hramova.</p>
 <a href="https://www.academia.edu/175750735/%D0%A4%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5_%D0%B8_%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%98_%D1%86%D1%80%D0%BA%D0%B2%D0%B5%D0%BD%D0%BE_%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B5_%D0%BF%D0%B0%D1%80%D0%BE%D1%85%D0%B8%D1%98%D1%81%D0%BA%D0%B5_%D0%B8_%D1%81%D0%B2%D0%B5%D1%88%D1%82%D0%B5%D0%BD%D0%B8%D1%87%D0%BA%D0%B5_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B5_%D1%83_%D0%88%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B7%D1%83_%D0%B8_%D0%88%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D1%98%D0%B5%D1%80%D0%B5%D1%98%D1%81%D0%BA%D0%BE%D0%BC_%D0%BD%D0%B0%D0%BC%D0%B5%D1%81%D0%BD%D0%B8%D1%88%D1%82%D0%B2%D1%83_1879_1914_%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B5" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-
-<div class="card" data-text="Milan Savić Naselja stanovništvo Toplice oslobođenje 1878 Kuršumlija Prokuplje Academia">
-<div class="status green">🟢 BESPLATAN PDF / PROFIL AUTORA</div>
-<b>Milan Savić — Naselja i stanovništvo Toplice uoči oslobođenja 1878. godine</b>
-<p>Rad direktno obrađuje naselja i stanovništvo Toplice pred oslobođenje.</p>
-<a href="https://f-bg.academia.edu/MilanSavic" target="_blank">📄 OTVORI RAD / PREUZIMANJE</a>
-</div>
-<div class="card" data-text="Milan Savić Marina Kula Kuršumlija arheologija nalazišta kulturna stratigrafija topografske karakteristike">
-<div class="status green">🟢 BESPLATAN PDF</div>
-<b>Milan Savić — Marina kula kod Kuršumlije i obližnja nalazišta: kulturna stratigrafija i topografske karakteristike</b>
-<p>Rad o višeslojnom lokalitetu kod ušća Kosanice u Toplicu.</p>
-<a href="https://arheologija.rs/wp-content/uploads/2023/08/GSAD_35_2019.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
-</div>
-<div class="card" data-text="Milan Savić oružje vojna oprema pogrebni konteksti rimski period Srbija">
-<div class="status green">🟢 BESPLATAN PDF / PROFIL AUTORA</div>
-<b>Milan Savić — Nalazi oružja i vojne opreme u pogrebnim kontekstima od I do polovine V veka</b>
-<p>Širi rimski kontekst za teritoriju Srbije i arheološki deo biblioteke.</p>
-<a href="https://f-bg.academia.edu/MilanSavic" target="_blank">📄 OTVORI RAD / PREUZIMANJE</a>
-</div>
-
-
 <div class="card" data-text="Miroslav Svirčević lokalna uprava Niš Vranje Toplica Pirot 1876 1878">
 <div class="status green">🟢 BESPLATAN PDF</div>
 <b>Miroslav Svirčević — The Establishment of Serbian Local Government in the Counties of Niš, Vranje, Toplica and Pirot Subsequent to the Serbo-Turkish Wars of 1876–1878</b>
 <p>Akademski rad o uspostavljanju lokalne uprave u novooslobođenim oblastima posle ratova 1876–1878.</p>
 <a href="https://www.researchgate.net/publication/274881672_The_establishment_of_Serbian_local_government_in_the_counties_of_Nis_Vranje_Toplica_and_Pirot_subsequent_to_the_Serbo-Turkish_wars_of_1876-1878" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
+<h3 class="subheading">02.8 - Toplički ustanak 1917</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">02.9 - Prvi i Drugi svetski rat</h3>
 <div class="card" data-text="Leskovački zbornik Jablanica Pusta Reka Prvi svetski rat 1915 1918">
 <div class="status green">🟢 BESPLATAN PDF</div>
 <b>Leskovački zbornik 2016 — građa o Jablanici i Pustoj Reci u Prvom svetskom ratu</b>
 <p>Digitalni broj zbornika Muzeja u Leskovcu sa radovima relevantnim za Jablanički srez i širi prostor Puste Reke.</p>
 <a href="https://www.muzejleskovac.rs/leskovacki-zbornik/leskovacki-zbornik-2016-final.pdf" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-<div class="card" data-text="Mita Rakić Iz nove Srbije Pusta Reka Bojnik Brijanje Kacabać Prokuplje Drenovac Petrova gora">
-<div class="status green">🟢 ČITANJE ONLINE</div>
-<b>Mita Rakić — Iz nove Srbije (1880–1881)</b>
-<p>Putopisni izvor neposredno posle oslobođenja. Posebno važan za pravac Prokuplje → Drenovac → Brijanje → Gornje/Donje Brijanje → Kacabać → Bojnik i Petrovu goru.</p>
-<a href="https://anyflip.com/cawny/rnjf/" target="_blank">📖 OTVORI KNJIGU ONLINE</a>
+<h3 class="subheading">02.10 - Ostalo</h3>
+<div class="card" data-text="Danijela Vukoičić Toplica stanovništvo naselja gustina Kuršumlija Prokuplje Blace Žitorađa 20 vek">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Danijela Vukoičić — Changes in Population, Households, and Population Density in Toplica District in the Second Half of the XX and Beginning of XXI Century</b>
+<p>Demografski rad o četiri opštine Topličkog okruga: Prokuplje, Kuršumlija, Blace i Žitorađa, sa podacima o naseljima, stanovništvu i promenama gustine.</p>
+<a href="https://independent.academia.edu/DanijelaVukoi%C4%8Di%C4%87" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+</div>
+<div class="card" data-text="Blace Toplica demografija stanovništvo migracije 1948 2011">
+<div class="status green">🟢 DIREKTAN PDF</div>
+<b>Maja Novović i Marija Mihajlović — Demographic Changes in the County of Toplica</b>
+<p>Širi demografski pregled Toplice sa posebnim tabelama za opštinu Blace: stanovništvo, gustina, migracije, prirodni priraštaj, starosna i ekonomska struktura.</p>
+<a href="https://www.pmf.ni.ac.rs/download/casopisi/sjg/3-2017.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
 </div>
 <div class="card" data-text="Vujadin Rudić Population de Toplica Stanovništvo Toplice 1978 Kuršumlija Prokuplje Blace Žitorađa">
 <div class="status blue">🔵 DIGITALIZOVAN PRIMERAK</div>
@@ -308,8 +317,6 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>192 strane, Etnografski institut SANU. Digitalizovani primerak je evidentiran u Google Books, uz napomenu da pristup može zavisiti od režima konkretnog primerka.</p>
 <a href="https://books.google.com/books?id=xQEeAAAAIAAJ" target="_blank">📖 OTVORI GOOGLE BOOKS</a>
 </div>
-
-
 <div class="card" data-text="Grigorije Božović Pripovetke 1926 Toplica Kosovo Južna Srbija">
 <div class="status green">🟢 CELO DELO — PDF / JPG / OCR</div>
 <b>Grigorije Božović — Pripovetke (1926)</b>
@@ -346,45 +353,47 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Prikaz knjige Boška Novakovića u <i>Književnim novinama</i> od 10. februara 1961.</p>
 <a href="https://pretraziva.rs/show/knjizevne-novine--1961-02-10.pdf" target="_blank">📄 OTVORI BROJ / PDF</a>
 </div>
-
-
-
 <div class="card" data-text="Blagoje Glozić Nebo božurne Ivan Ivanović Ikarov let Aleksandar Černov Tiho Voja Krasić Srpske ljube Dragan Borisavljević Male obnove Drainac Prokuplje">
 <div class="status blue">🔵 DIGITALIZOVANA GRAĐA — IZDAVAČKI TRAG</div>
 <b>Izdavačka kuća „Drainac“, Prokuplje — izdavački katalog iz 1968.</b>
 <p>U <i>Književnim novinama</i> od 20. jula 1968. navedena su izdanja Blagoja Glozića, Ivana Ivanovića, Aleksandra Černova, Voje Krasića i Dragana Borisavljevića.</p>
 <a href="https://pretraziva.rs/prikaz/knjizevne-novine/1968-07-20/2" target="_blank">📄 OTVORI DIGITALIZOVANI BROJ</a>
 </div>
-
-
-
-
-
-
-
-<h2 id="kursumlija">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-<div class="card" data-text="Emina Zečević Nakit crkva Sv Bogorodice Kuršumlija srednji vek arheologija">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Emina Zečević — Nakit iz crkve Sv. Bogorodice u Kuršumliji</b>
-<p>Arheološki rad o nakitu pronađenom u crkvi Sv. Bogorodice kod Kuršumlije. Posebno zanimljiv za srednjovekovnu arheologiju neposredne okoline grada.</p>
-<a href="https://narodnimuzej.academia.edu/EminaZecevic" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+<div class="card" data-text="Đeneralštabna karta Srbije Prokuplje Z 8 1894 1 75000 Toplica Kuršumlija">
+<div class="status blue">🔵 DIGITALNA KARTA</div>
+<b>Đeneralštabna karta Srbije — list Z 8, Prokuplje (1894), 1:75.000</b>
+<p>Vojna topografska karta koja obuhvata Prokuplje i širi prostor Toplice.</p>
+<a href="https://commons.wikimedia.org/wiki/File:%D0%82%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%88%D1%82%D0%B0%D0%B1%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B5-%D0%97_8%2C_%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D0%BF%D1%99%D0%B5.jpg" target="_blank">🗺️ OTVORI KARTU</a>
 </div>
-<div class="card" data-text="Žarko B Veljković Kuršumlija Bele Crkve naziv srednjovekovni grad istorija">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Žarko B. Veljković — Da li bi valjalo da Kuršumlija postane ponovo Bele Crkve?</b>
-<p>Istorijsko-lingvistički rad o srednjovekovnom nazivu Kuršumlije „Bele Crkve“ i pitanju kontinuiteta imena grada.</p>
-<a href="https://f-bg.academia.edu/Departments/Klasicne_Nauke/Documents?page=2" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+<div class="card" data-text="Prokuplje 1 50000 topografska GeoPDF DMA 1995 karta">
+<div class="status blue">🔵 GEOPDF</div>
+<b>Prokuplje — topografska karta 1:50.000 (DMA)</b>
+<p>Savremena topografska karta za poređenje sa starim kartama i identifikaciju terena i naselja.</p>
+<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_Serbia%2C_Sheet_3281_II%2C_1-50%2C000_U.S._Defense_Mapping_Agency_%28GeoPDF%29_-_PCL_Map_Collection_-_prokuplje-serbia-50k-3281ii-1995.pdf" target="_blank">🗺️ OTVORI / PREUZMI PDF</a>
 </div>
-<div class="card" data-text="Mirčeta Vemić Kuršumlija nahija etnička karta Stara Srbija Miloš Milojević 19 vek">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Mirčeta Vemić — Serbs in Kosovo and Metohija in the Second Half of the 19th Century According to an Ethnic Map of a Part of Old Serbia</b>
-<p>Rad o etničkoj karti dela Stare Srbije, pri čemu je u kartografsku celinu uključena i Kuršumlijska nahija. Koristan za proučavanje naselja i demografske slike pred ratove 1876–1878.</p>
-<a href="https://independent.academia.edu/Mir%C4%8DetaVemi%C4%87/Papers" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+<div class="card" data-text="Prokuplje Hisar arheološki lokalitet Wikimedia Commons stare slike">
+<b>Prokuplje — Hisar i arheološka građa</b>
+<p>Javno dostupne fotografije i istorijska vizuelna građa.</p>
+<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_stari_plan.jpg" target="_blank">🏰 STARI PLAN HISARA</a> ·
+<a href="https://commons.wikimedia.org/wiki/File%3AArchaeological_site_on_Hisar_hill_in_Prokuplje_01.jpg" target="_blank">🏺 ARHEOLOŠKI LOKALITET</a>
 </div>
-</div>03. 🏘️ Kuršumlija</h2>
+<div class="card" data-text="Narodna biblioteka Rade Drainac Prokuplje zavičajni fond digitalna kolekcija Toplica">
+<div class="status blue">🔵 LOKALNA DIGITALNA ZBIRKA</div>
+<b>Narodna biblioteka „Rade Drainac“ Prokuplje — Zavičajni fond</b>
+<p>Portal biblioteke i zavičajni fond za Toplicu; posebno koristan za lokalnu građu.</p>
+<a href="https://bibliotekaprokuplje.org.rs/zavicajni-fond/" target="_blank">🏛️ ZAVIČAJNI FOND</a> ·
+<a href="https://digitalnakolekcijadrainac.blogspot.com/" target="_blank">💻 DIGITALNA KOLEKCIJA</a>
+</div>
+<div class="card" data-text="Toplica mape Wikimedia Commons Maps of Toplica District">
+<div class="status blue">🔵 DIGITALNA KARTOGRAFSKA ZBIRKA</div>
+<b>Wikimedia Commons — Maps of Toplica District</b>
+<p>Kategorija sa javno dostupnim kartama Topličkog okruga i povezanom kartografskom građom.</p>
+<a href="https://commons.wikimedia.org/wiki/Category:Maps_of_Toplica_District" target="_blank">🗺️ OTVORI KATEGORIJU</a>
+</div>
 
+
+<h2 id="kursumlija">03 - KURŠUMLIJA</h2>
+<h3 class="subheading">03.1 - Opšta istorija Kuršumlije</h3>
 <div class="card" data-text="Kanitz Kuršumlija Prokuplje Toplica Jankova klisura Prepolac 1909">
 <div class="status green">🟢 FULL VIEW</div>
 <b>Felix Philipp Kanitz — Das Königreich Serbien und das Serbenvolk, Bd. 2 (1909)</b>
@@ -399,18 +408,6 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p class="small"><b>Bibliografska potvrda:</b> Google Books i bibliotečki katalozi potvrđuju srpsko izdanje iz 1985. godine i dva toma.</p>
 <a href="https://drive.proton.me/urls/CHV6EE3JQR#b4Uvo2mm4u8A" target="_blank">📖 ČITAJ ONLINE</a> ·
 <a href="https://drive.proton.me/urls/CHV6EE3JQR#b4Uvo2mm4u8A" target="_blank">📥 OTVORI / PREUZMI PDF</a>
-</div>
-<div class="card featured" style="border:3px solid #8b6b1f;background:#fffdf4;padding:22px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)">
-<div style="font-size:18px;font-weight:bold;color:#8b6b1f">⭐ ISTAKNUTA MONOGRAFIJA — KURŠUMLIJA</div>
-<h3 class="subheading">🏛️ Manastir Svetog Nikole u Toplici — dr Emina Zečević</h3>
-<p><b>Manastir Svetog Nikole u Toplici. Arheološka istraživanja</b> (Narodni muzej u Beogradu, Biblioteka „Srednji vek“, 2021), 383 strane.</p>
-<p>Monografija predstavlja rezultat višegodišnjeg rada na prikupljanju dokumentacije, rekonstrukciji istraživanja i analizi arheološke građe manastira Svetog Nikole u Kuršumliji. Prema dostupnim podacima, knjiga obuhvata položaj i istorijat tla, istorijske izvore, istorijat arheoloških istraživanja, razvoj manastira od XII do XVII veka, sahranjivanje i analizu nalaza od keramike, stakla, metala, kosti, kamena i crkvenog mobilijara.</p>
-<p><b>Važna napomena:</b> javno dostupan kompletan digitalni primerak knjige nisam pronašao, zato je ovde ne predstavljamo kao „Full view“. Ovo je istaknuta bibliografska jedinica i polazna tačka za dalje traženje kompletnog primerka.</p>
-<p>
-<a href="https://narodnimuzej.academia.edu/Departments/Departement_of_medieval_archaeology/Documents?page=2" target="_blank">📖 OTVORI / PREUZMI — DIGITALNI PRIMERAK</a><br><a href="https://narodnimuzej.academia.edu/Departments/Departement_of_medieval_archaeology/Documents?page=2" target="_blank">📚 EMINA ZEČEVIĆ — RADOVI I DIGITALNA GRAĐA</a>
-&nbsp; · &nbsp;
-<a href="https://narodnimuzej.academia.edu/EminaZecevic" target="_blank">📚 EMINA ZEČEVIĆ — RADOVI I PUBLIKACIJE</a>
-</p>
 </div>
 <div class="card" data-text="Julka Kuzmanović Cvetković Emina Zečević Kuršumlija arheološko nasleđe opštine Kuršumlija">
 <div class="status blue">🔵 DIGITALIZOVANA GRAĐA</div>
@@ -436,15 +433,60 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p>Putopisno-etnografski izvor sa opisima naselja, puteva, crkava, ruševina i stanovništva Srbije.</p>
 <a href="https://books.google.com/books?id=Jh4UAAAAQAAJ" target="_blank">📖 OTVORI KNJIGU</a>
 </div>
-
+<h3 class="subheading">03.2 - Praistorija</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.3 - Rimsko doba</h3>
+<div class="card" data-text="Rimsko doba Kuršumlija Emina Zečević Julka Kuzmanović Cvetković Milan Savić arheologija">
+<div class="status blue">🔵 VIDEO GRAĐA — ARHEOLOGIJA I RIMSKO DOBA</div>
+<b>🎥 Rimsko doba u Kuršumliji 1</b>
+<p>Video o rimskom periodu u Kuršumliji. U videu učestvuju <b>Emina Zečević, Julka Kuzmanović-Cvetković i Milan Savić</b>.</p>
+<a href="https://www.youtube.com/watch?v=0eXLVjr2vww" target="_blank">▶️ OTVORI VIDEO</a>
+</div>
+<div class="card" data-text="Rimsko doba Kuršumlija Emina Zečević Julka Kuzmanović Cvetković Milan Savić arheologija">
+<div class="status blue">🔵 VIDEO GRAĐA — ARHEOLOGIJA I RIMSKO DOBA</div>
+<b>🎥 Rimsko doba u Kuršumliji 2</b>
+<p>Nastavak video-priloga o rimskom periodu i arheološkoj baštini Kuršumlije. U videu učestvuju <b>Emina Zečević, Julka Kuzmanović-Cvetković i Milan Savić</b>.</p>
+<a href="https://www.youtube.com/watch?v=dFBXYzhpkHg&t=129s" target="_blank">▶️ OTVORI VIDEO</a>
+</div>
+<h3 class="subheading">03.4 - Srednji vek</h3>
+<div class="card" data-text="Emina Zečević Nakit crkva Sv Bogorodice Kuršumlija srednji vek arheologija">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Emina Zečević — Nakit iz crkve Sv. Bogorodice u Kuršumliji</b>
+<p>Arheološki rad o nakitu pronađenom u crkvi Sv. Bogorodice kod Kuršumlije. Posebno zanimljiv za srednjovekovnu arheologiju neposredne okoline grada.</p>
+<a href="https://narodnimuzej.academia.edu/EminaZecevic" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+</div>
+<div class="card" data-text="Žarko B Veljković Kuršumlija Bele Crkve naziv srednjovekovni grad istorija">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Žarko B. Veljković — Da li bi valjalo da Kuršumlija postane ponovo Bele Crkve?</b>
+<p>Istorijsko-lingvistički rad o srednjovekovnom nazivu Kuršumlije „Bele Crkve“ i pitanju kontinuiteta imena grada.</p>
+<a href="https://f-bg.academia.edu/Departments/Klasicne_Nauke/Documents?page=2" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+</div>
+<div class="card" data-text="Mirčeta Vemić Kuršumlija nahija etnička karta Stara Srbija Miloš Milojević 19 vek">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Mirčeta Vemić — Serbs in Kosovo and Metohija in the Second Half of the 19th Century According to an Ethnic Map of a Part of Old Serbia</b>
+<p>Rad o etničkoj karti dela Stare Srbije, pri čemu je u kartografsku celinu uključena i Kuršumlijska nahija. Koristan za proučavanje naselja i demografske slike pred ratove 1876–1878.</p>
+<a href="https://independent.academia.edu/Mir%C4%8DetaVemi%C4%87/Papers" target="_blank">📄 OTVORI / PREUZMI PDF</a>
+</div>
+<div class="card" data-text="Kuršumlija srednji vek srednjovekovni ostaci arheologija istorija">
+<div class="status blue">🔵 VIDEO GRAĐA — SREDNJI VEK</div>
+<b>🎥 Ostaci srednjeg veka u Kuršumliji</b>
+<p>Video prilog o ostacima i tragovima srednjeg veka na prostoru Kuršumlije.</p>
+<a href="https://www.youtube.com/watch?v=EOZBSp1EjZE" target="_blank">▶️ OTVORI VIDEO</a>
+</div>
+<h3 class="subheading">03.5 - Srpsko-turski period</h3>
+<div class="card" data-text="Kuršumlija tursko doba osmansko doba istorija">
+<div class="status blue">🔵 VIDEO GRAĐA — OSMANSKI PERIOD</div>
+<b>🎥 Kuršumlija u tursko doba</b>
+<p>Video prilog o istoriji Kuršumlije u periodu osmanske vlasti.</p>
+<a href="https://www.youtube.com/watch?v=ifvqYdo9498" target="_blank">▶️ OTVORI VIDEO</a>
+</div>
+<h3 class="subheading">03.6 - Oslobođenje 1877-1878</h3>
 <div class="card" data-text="Vukoje Todorović Prepolački manevar Prepolac Samokovo Kuršumlija 1896">
 <div class="status blue">🔵 DIGITALIZOVANA GRAĐA — LOKALNI IZVOR</div>
 <b>Prepolački manevar kapetana Vukoja Todorovića (1896)</b>
 <p>Tekst o ratnoj vežbi na prostoru Kuršumlije, Samokova i Prepolca, sa sećanjima kapetana Vukoja Todorovića.</p>
 <a href="https://www.rtvkursumlija.com/index.php/item/prepolacki-manevar-pod-komandom-kapetana-vukoja-todorovica-1896-godine/231" target="_blank">📖 OTVORI TEKST</a>
 </div>
-
-
 <div class="card" data-text="Rodoljub Gligorijević U prestonici vojvode Mrkše Top Novosti Kuršumlija istorija Ad Fines oslobođenje 1877 1878 zlato Štava Mrče srpski vitezovi Devojačke suze">
 <div class="status blue">🔵 JAVNO OBJAVLJENI IZVODI IZ KNJIGE</div>
 <b>Rodoljub Gligorijević — <i>U prestonici vojvode Mrkše</i> — javno objavljeni izvodi</b>
@@ -461,190 +503,69 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 </p>
 <p class="small">Izvodi su na Top Novostima potpisani kao: „Autor: Radoljub Gligorijević, izvodi iz knjige U prestonici vojvode Mrkše“.</p>
 </div>
-
-
 <div class="card" data-text="Kuršumlija oslobođenje od Turaka 1877 1878 Topličke Vesti Darko Žarić Mikuljanski vis Samokovo Prepolac Dimitrije Petrović">
 <div class="status blue">🔵 JAVNO DOSTUPAN TEKST — TOPLIČKE VESTI</div>
 <b>Evo kako je Kuršumlija oslobođena od Turaka — Topličke Vesti (18. januar 2023)</b>
 <p>Tekst o borbama za oslobođenje Kuršumlije 1877–1878, napredovanju Ibarske i Moravske divizije, Mikuljanskom visu, Samokovu i Prepolcu. Autor teksta je Darko Žarić.</p>
 <a href="https://toplickevesti.com/evo-kako-je-kursumlija-oslobodjena-od-turaka/" target="_blank">📖 OTVORI TEKST</a>
 </div>
-
-<div class="card" data-text="Ivan Ivanović Dosije Crveni kralj Kuršumlija Prokuplje politički osuđenici Hereticus 2004 Vrhovni sud Jugoslavije">
-<div class="status green">🟢 DIREKTAN PDF — HERETICUS</div>
-<b>Dosije o Ivanu Ivanoviću — Hereticus: „Dileme oko rehabilitacije političkih osuđenika“</b>
-<p>Javno dostupan dokument sa zasebnim „Dossierom o Ivanu Ivanoviću“. Sadrži dokumentaciju o postupku protiv književnika Ivana Ivanovića, uključujući zahtev za istragu, pitanje nadležnosti između Prokuplja i Pančeva i rešenje Vrhovnog suda Jugoslavije od 16. maja 1973. godine.</p>
-<a href="https://hereticus.rs/wp-content/uploads/Hereticus-2004-II-2-Dileme-oko-rehabilitacije-politickih-osudjenika.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
-</div>
-
-
-
-
-
-
-<h2 id="pusta-reka">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-
-</div>04. 🌳 Pusta Reka i Bojnik</h2>
-
-<div class="card" data-text="Boško Krstić Jablanica Pusta Reka ustanak 1941 Bojnik Lebane Kosančić Donje Konjuvce">
-<div class="status green">🟢 DIREKTAN PDF — ZNACI</div>
-<b>Boško Krstić — <i>Jablanica i Pusta Reka u ustanku</i></b>
-<p>Izvor iz zbornika <i>Ustanak naroda Jugoslavije</i>, knjiga I. Rad neposredno obrađuje Jablanicu i Pustu Reku u ustanku 1941. godine, uključujući lokalnu organizaciju, Donje Konjuvce, Kosančić, Bojnik i druga mesta ovog kraja.</p>
-<p class="small"><b>Izvor:</b> Boško Krstić, „Jablanica i Pusta Reka u ustanku“, <i>Ustanak naroda Jugoslavije — zbornik, knjiga I</i>, str. 509–527.</p>
-<p class="small"><b>Originalni digitalni izvor:</b> Zbirka Znaci — dostupan je kompletan PDF zbornika.</p>
-<a href="https://znaci.org/00002/340.pdf" target="_blank">📄 OTVORI / PREUZMI PDF</a>
-</div>
-
-<div class="card" data-text="Istorijski arhiv Niš Načelstvo okruga Topličkog 1880 1915 Kuršumlija Prokuplje Kosanica Dobrica Jablanica">
-<div class="status green">🟢 DIREKTAN PDF — ISTORIJSKI ARHIV NIŠ</div>
-<b>Nevanka Vučković — Načelstvo okruga Topličkog 1880–1915. godine</b>
-<p>Pregled fonda Istorijskog arhiva Niš sa hronološkim rasponom 1880–1915. i opisom građe Topličkog okruga, uključujući Kosanički, Prokupački, Dobrnički i Jablanički srez.</p>
-<a href="https://arhivnis.rs/Izdavacka%20delatnost/Pescanik/P-2/28%20Nevenka%20Vuckovic.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
-</div>
-
-
-
-
-
-
-<h2 id="jablanica">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-<div class="card" data-text="Dragana Amedoski Mining Dubočica 16 vek Prloš Lece Leskovac rudnik Jablanica">
-<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
-<b>Dragana Amedoski i Vladeta Petrović — Mining in Dubočica in the 16th century</b>
-<p>Rad o rudniku Prloš u oblasti današnjeg Lecea, njegovom položaju u nahiji Dubočica i organizaciji rudarske proizvodnje u XVI veku. Veoma koristan za širi prostor Jablanice i Leskovca.</p>
-<a href="https://iib-ac.academia.edu/DraganaAmedoski" target="_blank">📄 OTVORI / PREUZMI PDF</a>
-</div>
-</div>05. 🏞️ Jablanica</h2>
-<div class="card empty-section"><span class="gray">Zbirka je predviđena za ovu oblast.</span></div>
-
-
-
-
-<h2 id="krusevac">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-
-</div>06. 🏰 Kruševac i Rasina</h2>
-
-<div class="card" data-text="Gopčević Serbien und die Serben Kruševac Rasina Stalać Morava 1891">
-<div class="status green">🟢 FULL VIEW</div>
-<b>Spiridion Gopčević — Serbien und die Serben, Bd. 1 (1891)</b>
-<p>Širi prikaz Srbije; koristan za Kruševac, Rasinu, Stalać, Moravu, manastire i istorijski kontekst kraja.</p>
-<a href="https://books.google.com/books?id=p98DAAAAYAAJ" target="_blank">📖 OTVORI KNJIGU</a>
-</div>
-<div class="card" data-text="Károly Kiss Hunyadi Kruševac Morava Srbija 1454 1456">
-<div class="status green">🟢 FULL VIEW</div>
-<b>Károly Kiss — Hunyadi János, pohod u Srbiji 1454. i oslobođenje Beograda 1456. (1857)</b>
-<p>Stariji istorijski izvor koji obuhvata Kruševac i srednjovekovni prostor Morave.</p>
-<a href="https://books.google.com/books?id=5tVoAAAAcAAJ" target="_blank">📖 OTVORI KNJIGU</a>
-</div>
-
-
-
-
-
-
-<h2 id="morava">
-<div class="local-periodika">
-<h3 class="subheading">📰 Periodika i stručni radovi</h3>
-
-</div>07. 🌊 Morava</h2>
-<div class="card empty-section"><span class="gray">Zbirka je predviđena za ovu oblast.</span></div>
-
-
-<h2 id="karte">08. 🗺️ Karte i mape</h2>
-
-<div class="card" data-text="Tabula Peutingeriana Peutingerova tabla rimski putevi Balkana Mezija Dardanija Toplica">
-<div class="status blue">🔵 DIGITALNA KARTA — INTERAKTIVNA</div>
-<b>Tabula Peutingeriana — rimska putna mreža</b>
-<p>Interaktivni digitalni prikaz Peutingerove table, sa segmentima rimske putne mreže. Koristan za praćenje antičkih komunikacija na prostoru Balkana i šireg područja Srbije.</p>
-<a href="https://www.tabula-peutingeriana.de/tabula.php?segm=6#a3" target="_blank">🗺️ OTVORI TABULU — SEGMENT 6</a>
-</div>
-<div class="card" data-text="Đeneralštabna karta Srbije Prokuplje Z 8 1894 1 75000 Toplica Kuršumlija">
-<div class="status blue">🔵 DIGITALNA KARTA</div>
-<b>Đeneralštabna karta Srbije — list Z 8, Prokuplje (1894), 1:75.000</b>
-<p>Vojna topografska karta koja obuhvata Prokuplje i širi prostor Toplice.</p>
-<a href="https://commons.wikimedia.org/wiki/File:%D0%82%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%88%D1%82%D0%B0%D0%B1%D0%BD%D0%B0_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B5-%D0%97_8%2C_%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D0%BF%D1%99%D0%B5.jpg" target="_blank">🗺️ OTVORI KARTU</a>
-</div>
-<div class="card" data-text="Prokuplje Hisar stari plan 1689 austrijski plan">
-<div class="status blue">🔵 DIGITALNI PLAN</div>
-<b>Stari austrijski plan Prokuplja / Hisara (1689)</b>
-<p>Istorijski plan utvrđenja Prokuplja/Hisara, koristan za poređenje izgleda grada i utvrđenja kroz vreme.</p>
-<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_stari_plan.jpg" target="_blank">🗺️ OTVORI PLAN</a>
-</div>
-<div class="card" data-text="Prokuplje 1 50000 topografska GeoPDF DMA 1995 karta">
-<div class="status blue">🔵 GEOPDF</div>
-<b>Prokuplje — topografska karta 1:50.000 (DMA)</b>
-<p>Savremena topografska karta za poređenje sa starim kartama i identifikaciju terena i naselja.</p>
-<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_Serbia%2C_Sheet_3281_II%2C_1-50%2C000_U.S._Defense_Mapping_Agency_%28GeoPDF%29_-_PCL_Map_Collection_-_prokuplje-serbia-50k-3281ii-1995.pdf" target="_blank">🗺️ OTVORI / PREUZMI PDF</a>
-</div>
-<div class="card" data-text="Fra Mauro mapa 1459 1460 srednjovekovna kartografija Balkan Srbija">
-<div class="status blue">🔵 DIGITALNA KARTA — VISOKA REZOLUCIJA</div>
-<b>Fra Mauro — Mappa Mundi (oko 1459–1460)</b>
-<p>Srednjovekovna karta sveta, korisna za istorijsku kartografiju i proučavanje predstava Balkana i Srbije. Wikimedia Commons ima originalni digitalni fajl u rezoluciji 5.000 × 5.000 piksela.</p>
-<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/FraMauroDetailedMap.jpg/960px-FraMauroDetailedMap.jpg" alt="Fra Mauro mapa" style="width:100%;max-width:700px;border:1px solid #ddd;border-radius:8px;display:block;margin:12px 0">
-<a href="https://commons.wikimedia.org/wiki/File:FraMauroDetailedMap.jpg" target="_blank">🗺️ OTVORI KARTU / ORIGINAL 5000×5000</a>
-</div>
-<div class="card" data-text="Historical Archive Toplice Prokuplje mapa istorijski arhiv">
-<div class="status blue">🔵 DIGITALNA MAPA</div>
-<b>Istorijski arhiv „Toplice“ — mapa</b>
-<p>Istorijska mapa povezana sa građom Istorijskog arhiva „Toplice“, dostupna preko Wikimedia Commons.</p>
-<a href="https://commons.wikimedia.org/wiki/File%3AHistorical_Archive_%22Toplice%22_of_Prokuplje_Map.png" target="_blank">🗺️ OTVORI MAPU</a>
-</div>
-
 <div class="card" data-text="Milan Savić Vojislav Arsenijević Oslobađanje Kuršumlije Turaka 1877 1878 ratni dnevnici Dimitrije Mita Petrović Vladan Đorđević Samokovo Prepolac Gornji Krčmar Kastrat">
 <div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
 <b>Milan Savić i Vojislav Arsenijević — Oslobađanje Kuršumlije od Turaka 1877–1878. u ratnim dnevnicima Dimitrija Mite Petrovića i Vladana Đorđevića</b>
 <p>Rad o borbama za oslobođenje Kuršumlije, topografiji bojišta i terenskim tragovima utvrđenja na Samokovu, u Gornjem Krčmaru i Kastratu.</p>
 <a href="https://www.academia.edu/115548923/%D0%9E%D1%81%D0%BB%D0%BE%D0%B1%D0%B0%D1%92%D0%B0%D1%9A%D0%B5_%D0%9A%D1%83%D1%80%D1%88%D1%83%D0%BC%D0%BB%D0%B8%D1%98%D0%B5_%D0%BE%D0%B4_%D0%A2%D1%83%D1%80%D0%B0%D0%BA%D0%B0_1877_1878_%D1%83_%D1%80%D0%B0%D1%82%D0%BD%D0%B8%D0%BC_%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D1%86%D0%B8%D0%BC%D0%B0_%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D1%98%D0%B0_%D0%9C%D0%B8%D1%82%D0%B5_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%9B%D0%B0_%D0%B8_%D0%92%D0%BB%D0%B0%D0%B4%D0%B0%D0%BD%D0%B0_%D0%82%D0%BE%D1%80%D1%92%D0%B5%D0%B2%D0%B8%D1%9B%D0%B0" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-
-
-
-<h2 id="fotografije">09. 🖼️ Fotografije</h2>
+<h3 class="subheading">03.7 - Kraljevina Srbija</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.8 - Prvi svetski rat</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.9 - Toplički ustanak 1917</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.10 - Drugi svetski rat</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.11 - Kuršumlija 1945-1990</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.12 - Savremena Kuršumlija</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.13 - Stanovništvo i rodoslovi</h3>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+<h3 class="subheading">03.14 - Crkve, manastiri i spomenici</h3>
+<div class="card" data-text="Milan Savić Marina Kula Kuršumlija arheologija nalazišta kulturna stratigrafija topografske karakteristike">
+<div class="status green">🟢 BESPLATAN PDF</div>
+<b>Milan Savić — Marina kula kod Kuršumlije i obližnja nalazišta: kulturna stratigrafija i topografske karakteristike</b>
+<p>Rad o višeslojnom lokalitetu kod ušća Kosanice u Toplicu.</p>
+<a href="https://arheologija.rs/wp-content/uploads/2023/08/GSAD_35_2019.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
+</div>
+<div class="card featured" style="border:3px solid #8b6b1f;background:#fffdf4;padding:22px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)">
+<div style="font-size:18px;font-weight:bold;color:#8b6b1f">⭐ ISTAKNUTA MONOGRAFIJA — KURŠUMLIJA</div>
+<h3 class="subheading">🏛️ Manastir Svetog Nikole u Toplici — dr Emina Zečević</h3>
+<p><b>Manastir Svetog Nikole u Toplici. Arheološka istraživanja</b> (Narodni muzej u Beogradu, Biblioteka „Srednji vek“, 2021), 383 strane.</p>
+<p>Monografija predstavlja rezultat višegodišnjeg rada na prikupljanju dokumentacije, rekonstrukciji istraživanja i analizi arheološke građe manastira Svetog Nikole u Kuršumliji. Prema dostupnim podacima, knjiga obuhvata položaj i istorijat tla, istorijske izvore, istorijat arheoloških istraživanja, razvoj manastira od XII do XVII veka, sahranjivanje i analizu nalaza od keramike, stakla, metala, kosti, kamena i crkvenog mobilijara.</p>
+<p><b>Važna napomena:</b> javno dostupan kompletan digitalni primerak knjige nisam pronašao, zato je ovde ne predstavljamo kao „Full view“. Ovo je istaknuta bibliografska jedinica i polazna tačka za dalje traženje kompletnog primerka.</p>
+<p>
+<a href="https://narodnimuzej.academia.edu/Departments/Departement_of_medieval_archaeology/Documents?page=2" target="_blank">📖 OTVORI / PREUZMI — DIGITALNI PRIMERAK</a><br><a href="https://narodnimuzej.academia.edu/Departments/Departement_of_medieval_archaeology/Documents?page=2" target="_blank">📚 EMINA ZEČEVIĆ — RADOVI I DIGITALNA GRAĐA</a>
+&nbsp; · &nbsp;
+<a href="https://narodnimuzej.academia.edu/EminaZecevic" target="_blank">📚 EMINA ZEČEVIĆ — RADOVI I PUBLIKACIJE</a>
+</p>
+</div>
+<h3 class="subheading">03.15 - Stare fotografije i razglednice</h3>
 <div class="card" data-text="Kuršumlija panorama Wikimedia Commons fotografije karte">
 <b>Kuršumlija — Wikimedia Commons</b>
 <p>Panorama i kategorije sa fotografijama i kartama Kuršumlije.</p>
 <a href="https://commons.wikimedia.org/wiki/File:Kursumlija-panorama.jpg" target="_blank">🖼️ PANORAMA</a> ·
 <a href="https://commons.wikimedia.org/wiki/Category:Maps_of_Kur%C5%A1umlija" target="_blank">🗺️ KARTE KURŠUMLIJE</a>
 </div>
-<div class="card" data-text="Prokuplje Hisar arheološki lokalitet Wikimedia Commons stare slike">
-<b>Prokuplje — Hisar i arheološka građa</b>
-<p>Javno dostupne fotografije i istorijska vizuelna građa.</p>
-<a href="https://commons.wikimedia.org/wiki/File%3AProkuplje_stari_plan.jpg" target="_blank">🏰 STARI PLAN HISARA</a> ·
-<a href="https://commons.wikimedia.org/wiki/File%3AArchaeological_site_on_Hisar_hill_in_Prokuplje_01.jpg" target="_blank">🏺 ARHEOLOŠKI LOKALITET</a>
+<h3 class="subheading">03.16 - Mape i kartografija</h3>
+<div class="card" data-text="Vladan Jovanovic Burda karta opštine Kuršumlija raspored mesnih kancelarija mesne kancelarije Kuršumlija mapa">
+<div class="status blue">🔵 DIGITALNA KARTA — PROTON DRIVE</div>
+<b>🗺️ Karta opštine Kuršumlija — raspored mesnih kancelarija</b>
+<p><b>Autor: Vladan Jovanovic – Burda</b></p>
+<p>Autorska karta opštine Kuršumlija sa rasporedom mesnih kancelarija. Karta je izrađena lično i postavljena u digitalnu biblioteku uz dozvolu autora.</p>
+<p class="small"><b>Autor:</b> Vladan Jovanovic – Burda. <b>Napomena o izvoru:</b> autorska karta, nije preuzeta iz druge publikacije.</p>
+<a href="https://drive.proton.me/urls/JBTG9XHSBM#l1zT25W0EX9q" target="_blank">🗺️ OTVORI KARTU</a> ·
+<a href="https://drive.proton.me/urls/JBTG9XHSBM#l1zT25W0EX9q" target="_blank">📥 OTVORI / PREUZMI</a>
 </div>
-
-
-<h2 id="video">10. 🎥 Video</h2>
-<div class="card" data-text="Rimsko doba Kuršumlija Emina Zečević Julka Kuzmanović Cvetković Milan Savić arheologija">
-<div class="status blue">🔵 VIDEO GRAĐA — ARHEOLOGIJA I RIMSKO DOBA</div>
-<b>🎥 Rimsko doba u Kuršumliji 1</b>
-<p>Video o rimskom periodu u Kuršumliji. U videu učestvuju <b>Emina Zečević, Julka Kuzmanović-Cvetković i Milan Savić</b>.</p>
-<a href="https://www.youtube.com/watch?v=0eXLVjr2vww" target="_blank">▶️ OTVORI VIDEO</a>
-</div>
-<div class="card" data-text="Rimsko doba Kuršumlija Emina Zečević Julka Kuzmanović Cvetković Milan Savić arheologija">
-<div class="status blue">🔵 VIDEO GRAĐA — ARHEOLOGIJA I RIMSKO DOBA</div>
-<b>🎥 Rimsko doba u Kuršumliji 2</b>
-<p>Nastavak video-priloga o rimskom periodu i arheološkoj baštini Kuršumlije. U videu učestvuju <b>Emina Zečević, Julka Kuzmanović-Cvetković i Milan Savić</b>.</p>
-<a href="https://www.youtube.com/watch?v=dFBXYzhpkHg&t=129s" target="_blank">▶️ OTVORI VIDEO</a>
-</div>
-<div class="card" data-text="Kuršumlija tursko doba osmansko doba istorija">
-<div class="status blue">🔵 VIDEO GRAĐA — OSMANSKI PERIOD</div>
-<b>🎥 Kuršumlija u tursko doba</b>
-<p>Video prilog o istoriji Kuršumlije u periodu osmanske vlasti.</p>
-<a href="https://www.youtube.com/watch?v=ifvqYdo9498" target="_blank">▶️ OTVORI VIDEO</a>
-</div>
-<div class="card" data-text="Kuršumlija srednji vek srednjovekovni ostaci arheologija istorija">
-<div class="status blue">🔵 VIDEO GRAĐA — SREDNJI VEK</div>
-<b>🎥 Ostaci srednjeg veka u Kuršumliji</b>
-<p>Video prilog o ostacima i tragovima srednjeg veka na prostoru Kuršumlije.</p>
-<a href="https://www.youtube.com/watch?v=EOZBSp1EjZE" target="_blank">▶️ OTVORI VIDEO</a>
-</div>
+<h3 class="subheading">03.17 - Privreda, zanati i svakodnevni život</h3>
 <div class="card" data-text="Tursko selo Bogujevac 1 istorija Kuršumlija Toplica selo video">
 <div class="status blue">🔵 VIDEO GRAĐA — STARA SELA</div>
 <b>🎥 Tursko selo Bogujevac 1</b>
@@ -677,59 +598,70 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 </div>
 
 
-<h2 id="dokumenta">11. 📜 Dokumenta i arhivska građa</h2>
-
-<div class="card" data-text="Pretraživa digitalizovane knjige novine časopisi Srbija">
-<div class="status green">🟢 DIGITALNA ZBIRKA</div>
-<b>Pretraživa — digitalizovane knjige i periodika</b>
-<p>Velika javno dostupna zbirka skeniranih knjiga, novina i časopisa, korisna za dalje pronalaženje lokalne književne i istorijske građe.</p>
-<a href="https://pretraziva.rs/" target="_blank">📚 OTVORI PRETRAŽIVA</a>
+<h2 id="pusta-reka">04 - PUSTA REKA I BOJNIK</h2>
+<div class="card" data-text="Boško Krstić Jablanica Pusta Reka ustanak 1941 Bojnik Lebane Kosančić Donje Konjuvce">
+<div class="status green">🟢 DIREKTAN PDF — ZNACI</div>
+<b>Boško Krstić — <i>Jablanica i Pusta Reka u ustanku</i></b>
+<p>Izvor iz zbornika <i>Ustanak naroda Jugoslavije</i>, knjiga I. Rad neposredno obrađuje Jablanicu i Pustu Reku u ustanku 1941. godine, uključujući lokalnu organizaciju, Donje Konjuvce, Kosančić, Bojnik i druga mesta ovog kraja.</p>
+<p class="small"><b>Izvor:</b> Boško Krstić, „Jablanica i Pusta Reka u ustanku“, <i>Ustanak naroda Jugoslavije — zbornik, knjiga I</i>, str. 509–527.</p>
+<p class="small"><b>Originalni digitalni izvor:</b> Zbirka Znaci — dostupan je kompletan PDF zbornika.</p>
+<a href="https://znaci.org/00002/340.pdf" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
-<div class="card" data-text="Narodna biblioteka Rade Drainac Prokuplje zavičajni fond digitalna kolekcija Toplica">
-<div class="status blue">🔵 LOKALNA DIGITALNA ZBIRKA</div>
-<b>Narodna biblioteka „Rade Drainac“ Prokuplje — Zavičajni fond</b>
-<p>Portal biblioteke i zavičajni fond za Toplicu; posebno koristan za lokalnu građu.</p>
-<a href="https://bibliotekaprokuplje.org.rs/zavicajni-fond/" target="_blank">🏛️ ZAVIČAJNI FOND</a> ·
-<a href="https://digitalnakolekcijadrainac.blogspot.com/" target="_blank">💻 DIGITALNA KOLEKCIJA</a>
-</div>
-<div class="card" data-text="Toplica mape Wikimedia Commons Maps of Toplica District">
-<div class="status blue">🔵 DIGITALNA KARTOGRAFSKA ZBIRKA</div>
-<b>Wikimedia Commons — Maps of Toplica District</b>
-<p>Kategorija sa javno dostupnim kartama Topličkog okruga i povezanom kartografskom građom.</p>
-<a href="https://commons.wikimedia.org/wiki/Category:Maps_of_Toplica_District" target="_blank">🗺️ OTVORI KATEGORIJU</a>
+<div class="card" data-text="Istorijski arhiv Niš Načelstvo okruga Topličkog 1880 1915 Kuršumlija Prokuplje Kosanica Dobrica Jablanica">
+<div class="status green">🟢 DIREKTAN PDF — ISTORIJSKI ARHIV NIŠ</div>
+<b>Nevanka Vučković — Načelstvo okruga Topličkog 1880–1915. godine</b>
+<p>Pregled fonda Istorijskog arhiva Niš sa hronološkim rasponom 1880–1915. i opisom građe Topličkog okruga, uključujući Kosanički, Prokupački, Dobrnički i Jablanički srez.</p>
+<a href="https://arhivnis.rs/Izdavacka%20delatnost/Pescanik/P-2/28%20Nevenka%20Vuckovic.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
 </div>
 
 
-
-
-<h2 id="licnosti">13. 👤 Ličnosti i rodoslovi</h2>
-<div class="card" data-text="Aleksa Ivić Rodoslovne tablice srpskih dinastija vlastele 1928">
-<div class="status green">🟢 CELO DELO — ONLINE</div>
-<b>Aleksa Ivić — Rodoslovne tablice srpskih dinastija i vlastele (1928)</b>
-<p>Digitalno izdanje sa tekstom i rodoslovnim tablicama srpskih dinastija i vlastele.</p>
-<a href="https://sr.wikisource.org/sr-el/Rodoslovne_tablice_%28A._Ivi%C4%87%29" target="_blank">📖 OTVORI DIGITALNO IZDANJE</a>
-</div>
-<div class="card" data-text="Sveta loza Stefana Nemanje Željko Fajfrić Nemanjići">
-<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
-<b>Željko Fajfrić — Sveta loza Stefana Nemanje</b>
-<p>Integralno elektronsko izdanje knjige o Nemanjićima na Projektu Rastko.</p>
-<a href="https://www.rastko.rs/istorija/loza_nemanjica/index.html" target="_blank">📖 OTVORI CELO DELO</a>
-</div>
-<div class="card" data-text="Sveta loza Brankovića Željko Fajfrić Brankovići">
-<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
-<b>Željko Fajfrić — Sveta loza Brankovića</b>
-<p>Integralno internet izdanje o poreklu, razvoju i članovima loze Brankovića.</p>
-<a href="https://rastko.rs/kosovo/istorija/zfajfric-brankovici.html" target="_blank">📖 OTVORI CELO DELO</a>
-</div>
-<div class="card" data-text="Sveta loza kneza Lazara Željko Fajfrić Lazarevići">
-<div class="status green">🟢 INTEGRALNO ELEKTRONSKO IZDANJE</div>
-<b>Željko Fajfrić — Sveta loza kneza Lazara</b>
-<p>Internet izdanje posvećeno Lazarevićima i srednjovekovnoj Srbiji.</p>
-<a href="https://www.rastko.rs/kosovo/istorija/zfajfric-lazarevici_c.html" target="_blank">📖 OTVORI CELO DELO</a>
+<h2 id="jablanica">05 - JABLANICA</h2>
+<div class="card" data-text="Dragana Amedoski Mining Dubočica 16 vek Prloš Lece Leskovac rudnik Jablanica">
+<div class="status green">🟢 BESPLATAN PDF — ACADEMIA</div>
+<b>Dragana Amedoski i Vladeta Petrović — Mining in Dubočica in the 16th century</b>
+<p>Rad o rudniku Prloš u oblasti današnjeg Lecea, njegovom položaju u nahiji Dubočica i organizaciji rudarske proizvodnje u XVI veku. Veoma koristan za širi prostor Jablanice i Leskovca.</p>
+<a href="https://iib-ac.academia.edu/DraganaAmedoski" target="_blank">📄 OTVORI / PREUZMI PDF</a>
 </div>
 
 
-<h2 id="ostalo">99. 📦 Ostalo / nerazvrstano</h2>
+<h2 id="krusevac">06 - KRUŠEVAC I RASINA</h2>
+<div class="card" data-text="Gopčević Serbien und die Serben Kruševac Rasina Stalać Morava 1891">
+<div class="status green">🟢 FULL VIEW</div>
+<b>Spiridion Gopčević — Serbien und die Serben, Bd. 1 (1891)</b>
+<p>Širi prikaz Srbije; koristan za Kruševac, Rasinu, Stalać, Moravu, manastire i istorijski kontekst kraja.</p>
+<a href="https://books.google.com/books?id=p98DAAAAYAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+</div>
+<div class="card" data-text="Károly Kiss Hunyadi Kruševac Morava Srbija 1454 1456">
+<div class="status green">🟢 FULL VIEW</div>
+<b>Károly Kiss — Hunyadi János, pohod u Srbiji 1454. i oslobođenje Beograda 1456. (1857)</b>
+<p>Stariji istorijski izvor koji obuhvata Kruševac i srednjovekovni prostor Morave.</p>
+<a href="https://books.google.com/books?id=5tVoAAAAcAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+</div>
+
+
+<h2 id="morava">07 - MORAVA</h2>
+<div class="empty-sub">Zbirka je predviđena za ovu oblast.</div>
+
+
+<h2 id="ostalo">99 - OSTALO / JOŠ NIJE RAZVRSTANO</h2>
+<div class="card" data-text="Tihomir Đorđević Iz Srbije kneza Miloša 1815 1839 Srbija naselja društvo običaji">
+<div class="status green">🟢 FULL VIEW</div>
+<b>Tihomir R. Đorđević — Iz Srbije kneza Miloša: kulturne prilike od 1815. do 1839. godine (1922)</b>
+<p>Širi istorijski okvir za Srbiju prve polovine XIX veka: uprava, naselja, društvo, običaji i život.</p>
+<a href="https://books.google.com/books?id=D0gLAAAAIAAJ" target="_blank">📖 OTVORI KNJIGU</a>
+</div>
+<div class="card" data-text="Milan Savić oružje vojna oprema pogrebni konteksti rimski period Srbija">
+<div class="status green">🟢 BESPLATAN PDF / PROFIL AUTORA</div>
+<b>Milan Savić — Nalazi oružja i vojne opreme u pogrebnim kontekstima od I do polovine V veka</b>
+<p>Širi rimski kontekst za teritoriju Srbije i arheološki deo biblioteke.</p>
+<a href="https://f-bg.academia.edu/MilanSavic" target="_blank">📄 OTVORI RAD / PREUZIMANJE</a>
+</div>
+<div class="card" data-text="Ivan Ivanović Dosije Crveni kralj Kuršumlija Prokuplje politički osuđenici Hereticus 2004 Vrhovni sud Jugoslavije">
+<div class="status green">🟢 DIREKTAN PDF — HERETICUS</div>
+<b>Dosije o Ivanu Ivanoviću — Hereticus: „Dileme oko rehabilitacije političkih osuđenika“</b>
+<p>Javno dostupan dokument sa zasebnim „Dossierom o Ivanu Ivanoviću“. Sadrži dokumentaciju o postupku protiv književnika Ivana Ivanovića, uključujući zahtev za istragu, pitanje nadležnosti između Prokuplja i Pančeva i rešenje Vrhovnog suda Jugoslavije od 16. maja 1973. godine.</p>
+<a href="https://hereticus.rs/wp-content/uploads/Hereticus-2004-II-2-Dileme-oko-rehabilitacije-politickih-osudjenika.pdf" target="_blank">📄 OTVORI DIREKTAN PDF</a>
+</div>
 <div class="card empty-section"><span class="gray">Zbirka je predviđena za ovu oblast.</span></div>
 
 <script>
