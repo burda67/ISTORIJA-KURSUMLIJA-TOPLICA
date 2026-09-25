@@ -33,14 +33,13 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <p class="small">🟢 <b>Full view</b> = ceo primerak je dostupan. 🔵 <b>Digitalizovana građa</b> = PDF, karta, članak, novinski broj ili druga javno dostupna digitalna građa.</p>
 </div>
 
-<input class="search" id="q" placeholder="Pretraži: Kuršumlija, Prokuplje, Dubovo, Bojnik, Drainac, karta..." oninput="filter()">
+<input class="search" id="q" placeholder="Pretraži celu biblioteku..." autocomplete="off">
 
 
 <div class="catalog intro">
 <h2 style="margin-top:0;border-bottom:0">📚 KATALOG I REGISTRI</h2>
 <p>Biblioteka je organizovana po geografskim celinama, a unutar njih po istorijskim periodima i temama.</p>
 <div class="catalog-grid">
-<a href="#katalog">00 — KATALOG I REGISTRI</a>
 <a href="#srbija">01 — SRBIJA</a>
 <a href="#toplica">02 — TOPLICA</a>
 <a href="#kursumlija">03 — KURŠUMLIJA</a>
@@ -50,9 +49,6 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <a href="#morava">07 — MORAVA</a>
 <a href="#ostalo">99 — OSTALO / JOŠ NIJE RAZVRSTANO</a>
 </div></div>
-<h2 id="katalog">00 - KATALOG I REGISTRI</h2>
-<div class="intro"><p>Katalog knjiga, izvora i digitalizovane građe, uz registre ličnosti, mesta, događaja, jedinica, objekata, porodica/rodova i izvora.</p></div>
-
 <h2 id="srbija">01 - SRBIJA</h2>
 <h3 class="subheading">01.1 - Opšta istorija Srbije</h3>
 <div class="card" data-text="Svetozar Marković Srbija na Istoku 1872 ratovi 1876 1877 Toplica">
@@ -740,12 +736,31 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
 <div class="card empty-section"><span class="gray">Zbirka je predviđena za ovu oblast.</span></div>
 
 <script>
-function filter(){
- const q=document.getElementById('q').value.toLowerCase().trim();
- document.querySelectorAll('.card').forEach(c=>{
-   c.style.display=(!q || (c.innerText+' '+(c.dataset.text||'')).toLowerCase().includes(q))?'block':'none';
- });
-}
+(function(){
+  const input = document.getElementById('q');
+
+  function norm(s){
+    return (s || '')
+      .toString()
+      .normalize('NFD')
+      .replace(/[\\u0300-\\u036f]/g,'')
+      .toLowerCase()
+      .trim();
+  }
+
+  function filter(){
+    const q = norm(input.value);
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      const haystack = norm((card.innerText || '') + ' ' + (card.dataset.text || ''));
+      card.style.display = (!q || haystack.includes(q)) ? '' : 'none';
+    });
+  }
+
+  input.addEventListener('input', filter);
+  input.addEventListener('keyup', filter);
+})();
 </script>
 </body>
 </html>
