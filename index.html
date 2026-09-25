@@ -743,7 +743,7 @@ a{color:#0645ad;text-decoration:none}a:hover{text-decoration:underline}
     return (s || '')
       .toString()
       .normalize('NFD')
-      .replace(/[\\u0300-\\u036f]/g,'')
+      .replaceAll('č','c').replaceAll('ć','c').replaceAll('š','s').replaceAll('ž','z').replaceAll('đ','d')
       .toLowerCase()
       .trim();
   }
